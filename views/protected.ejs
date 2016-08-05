@@ -1,0 +1,24 @@
+<% include includes/header %>
+	<div class="container">
+		<div class="row text-center">
+			<div class="pull-right">
+				<a class="btn btn-link center-block" href="/">BackTo Index</a>
+				<span>Login As <%= user.username%></span>&nbsp;<a class="btn btn-warning btn-xs" href="/logout">Logout</a>
+			</div>
+			<div class="col-md-6 col-md-offset-3">
+				<div class="page-header">
+					<h2><%= title%>&nbsp;</h2>
+				</div>
+				<h3>Hello, <strong><%= user.username%></strong></h3>
+				<p>Contents here are protected, only authenticated user can have access to these content.</p>
+				<div class="list-group">
+					<a class="list-group-item" href="#">Link One</a>
+					<a class="list-group-item" href="#">Link Two</a>
+					<a class="list-group-item" href="#">Link Three</a>
+					<a class="list-group-item" href="#">Link Four</a>
+					<a class="list-group-item" href="#">Link Five</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<% include includes/footer %>

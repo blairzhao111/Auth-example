@@ -1,0 +1,38 @@
+<% include includes/header %>
+	<div class="container">
+		<div class="pull-right">
+			<a class="btn btn-link btn-block" href="/">BackTo Index</a>
+			<a class="btn btn-link" href="/register">To Register</a>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="page-header">
+					<h2><%= title%>&nbsp;</h2>
+				</div>
+				<form class="row form" action="/login" method="POST">
+					<% if( messages.error ) { %>
+						<div class="alert alert-danger alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<strong><%= messages.error %></strong> 
+						</div>
+					<% } else if( messages.info ) { %>
+						<div class="alert alert-success alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<strong><%= messages.info %></strong> 
+						</div>						
+					<% } %>
+					<div class="col-md-12 form-group">
+						<input class="form-control" type="text" name="username" placeholder="username" required 
+						autofocus>		
+					</div>
+					<div class="col-md-12 form-group">
+						<input class="form-control" type="password" name="password" placeholder="password" required>
+					</div>
+					<div class="col-md-12">
+						<input type="submit" class="btn btn-default btn-block" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<% include includes/footer %>

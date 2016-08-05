@@ -1,0 +1,32 @@
+	<br>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+		<h3>req.session and req.user tracking</h3>
+			<div class="col-md-6 thumbnail">
+				<h4>req.session</h4>
+				<code><%= sessionStr %></code>
+			</div>
+			<div class="col-md-6 thumbnail">
+				<h4>req.user</h4>
+				<% if(userStr) { %>
+					<code><%= userStr %></code>
+				<% }else { %>
+					<code>undefined</code>
+				<% } %>
+			</div>			
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<hr>
+		<small>&copy; Junwei Zhao 2016</small>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		window.jQuery || alert("no jQuery loaded");
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+	padding-top: 30px;
+}
+
+.has-feedback .form-control-feedback {
+    top: 0px;
+    right: 15px;
+}

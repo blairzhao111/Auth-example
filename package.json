@@ -1,0 +1,28 @@
+{
+  "name": "simple-auth-example",
+  "version": "0.0.0",
+  "description": "a simple user authentication example with passport.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "Junwei Zhao <blairzhao111@gmail.com>",
+  "license": "Nolicense",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.14.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
